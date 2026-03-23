@@ -1,0 +1,48 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+.header{
+    background-color:rgb(142, 15, 15);
+    line-height: 70px;
+    padding-left: 30px;
+}
+header a{
+    color:white;
+    font-size: 20px;
+    font-weight: bold;
+}
+a,a:hover{
+    text-decoration: none;
+}
+.logout{
+    float: right;
+    padding-right: 30px;
+}
+ul{
+    background-color:#424a5b;
+    width: 15%;
+    height: 100%;
+    position:fixed;
+    padding-top:5%;
+    text-align: center;
+}
+ul li{
+    list-style: none;
+    padding-bottom: 30px;
+    font-size: 16px;
+    padding-right: 25px;
+}
+ul li a{
+    color:white;
+    font-weight: bold;
+    width: 15%;
+}
+ul li a:hover{
+    color: rgb(35, 181, 239);
+}
+.content{
+    margin-left: 20%;
+    margin-top: 5%;
+    padding-right: 20px;
+}

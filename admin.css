@@ -3,12 +3,12 @@
     padding: 0px;
 }
 .header{
-    background-color:rgb(142, 15, 15);
+    background-color:rgb(55, 168, 224);
     line-height: 70px;
     padding-left: 30px;
 }
 header a{
-    color:white;
+    color:rgb(255, 255, 255);
     font-size: 20px;
     font-weight: bold;
 }

@@ -8,13 +8,11 @@ ul{
     margin-right: 20px;
 }
 nav{
-    position: fixed;
-    background-color: rgb(142, 15, 15);
-    height: 70px;
+    position:fixed;
+    background-color: rgb(55, 168, 224);
+    height:70px;
     width: 100%;
     z-index: 1;
-    
-
 }
 .logo_img{
     float: left;
@@ -171,7 +169,7 @@ ul li a{
 }
 .footer{
     text-align:center;
-    background-color: rgb(156, 6, 6);
+    background-color:rgb(55, 168, 224);
     color: white;
     padding:20px;
     display:flex;

@@ -1,5 +1,6 @@
 <?php
     session_start();
+    $uname=$_SESSION['username'];
     if(!isset($_SESSION['username'])){
         header('location:login.php');
     }
@@ -32,18 +33,22 @@
             <li>
                 <a href="">My Result</a>
             </li>
+            <li>
+                <a href="">My Attendance</a>
+            </li>
+            <li>
+                <a href="">Academic Calender</a>
+            </li>
+            <li>
+                <a href="">Updates & Notifications</a>
+            </li>
             
         </ul>
     </aside>
     <div class="content">
-        <h1>PardhuKasa</h1>
-        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-            Facere quasi adipisci neque vero aliquid consequuntur,
-            architecto unde nisi nemo voluptate corrupti! Id laboriosam 
-            ea minus quae omnis dolorum cupiditate repudiandae? Placeat 
-            ex tempora cum consequatur repudiandae eum illo magni libero 
-            ratione excepturi! Mollitia animi eum dolorem, repudiandae 
-            vitae molestiae blanditiis.</p>
+        <h1>Welcome <?php
+        echo $uname;
+        ?></h1>
     </div>
 </body>
 </html>

@@ -1,48 +1,101 @@
 *{
-    margin: 0px;
-    padding: 0px;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
 }
+
+
 .header{
-    background-color:rgb(55, 168, 224);
+    background: linear-gradient(90deg, #1e3a8a, #3b82f6);
     line-height: 70px;
-    padding-left: 30px;
-}
-header a{
-    color:rgb(255, 255, 255);
+    padding: 0 30px;
+    color: white;
     font-size: 20px;
     font-weight: bold;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
 }
-a,a:hover{
+
+.header a{
+    color: white;
     text-decoration: none;
 }
+
 .logout{
     float: right;
-    padding-right: 30px;
 }
+
 ul{
-    background-color:#424a5b;
-    width: 15%;
-    height: 100%;
-    position:fixed;
-    padding-top:5%;
-    text-align: center;
+    background: #111827;
+    width: 220px;
+    height: 100vh;
+    position: fixed;
+    top: 100px;
+    left: 0;
+    padding-top: 30px;
 }
+
 ul li{
     list-style: none;
-    padding-bottom: 30px;
-    font-size: 16px;
-    padding-right: 25px;
+    margin-bottom: 20px;
 }
+
 ul li a{
-    color:white;
-    font-weight: bold;
-    width: 15%;
+    display: block;
+    color: #d1d5db;
+    padding: 12px 20px;
+    border-radius: 8px;
+    text-decoration: none;
+    margin: 0 10px;
+    transition: 0.3s;
+    font-weight: 500;
 }
-ul li a:hover{
-    color: rgb(35, 181, 239);
-}
+
+
 .content{
-    margin-left: 20%;
-    margin-top: 5%;
-    padding-right: 20px;
+    margin-left: 240px;
+    margin-top: 100px;
+    padding: 20px;
+}
+
+h1{
+    margin-bottom: 20px;
+    color: #111827;
+}
+
+.sidebar{
+    position: fixed;
+    top: 70px;
+    left: 0;
+    width: 220px;
+    height: 100vh;
+    background: #111827;
+    padding-top: 20px;
+}
+
+.sidebar ul{
+    padding: 0;
+}
+
+.sidebar ul li{
+    list-style: none;
+    margin-bottom: 10px;
+}
+
+.sidebar ul li a{
+    display: block;
+    color: #d1d5db;
+    padding: 12px 20px;
+    border-radius: 8px;
+    margin: 0 10px;
+    transition: 0.3s;
+    font-size: 15px;
+}
+
+.sidebar ul li a:hover{
+    background: #3b82f6;
+    color: white;
 }

@@ -76,14 +76,22 @@ if(isset($_POST['add_student'])){
             padding-top:15px;
             padding-bottom:15px;
         }
+        div label{
+            color:white;
+        }
         .div_deg{
-            background-color:skyblue;
+            background:#1e3a8a;
+            
             width: 400px;
             padding-top:20px;
             padding-bottom:20px;
         }
         .button{
             margin-top:30px;
+        }
+        .addstudent{
+            background: #3b82f6;
+            color: white;
         }
     </style>
 </head>
@@ -113,7 +121,7 @@ if(isset($_POST['add_student'])){
                         <input type="text" name="password">
                     </div>
                     <div>
-                        <input type="submit" class="btn btn-primary button" name="add_student" value="Add Student">
+                        <input type="submit" class="btn btn-success button" name="add_student" value="Add Student">
                     </div>
                 </form>
             </div>

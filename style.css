@@ -9,7 +9,7 @@ ul{
 }
 nav{
     position:fixed;
-    background-color: rgb(55, 168, 224);
+    background-color:#1E3A8A;
     height:70px;
     width: 100%;
     z-index: 1;
@@ -169,7 +169,7 @@ ul li a{
 }
 .footer{
     text-align:center;
-    background-color:rgb(55, 168, 224);
+    background-color:#0f172a;
     color: white;
     padding:20px;
     display:flex;

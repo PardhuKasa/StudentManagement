@@ -183,17 +183,14 @@
         <div class="contact-details">
             <p>Pardhukasa2@gmail.com</p>
             <p>+91 8790174508</p>
-            <p>Team Leader</p>
-        </div>
-        <div class="contact-details">
             <p>rushiroyals@gmail.com</p>
             <p>+91 9182011545</p>
-            <p>Team Member</p>
         </div>
-        <div class="contact-details">
+        <div class="contact-details">  
             <p>pattemDhanushya@gmail.com</p>
             <p>+91 9908971138</p>
-            <p>Team Member</p>
+            <p>Valli@gmail.com</p>
+            <p>+91 8790174508</p>
         </div>
     </div>
 <script src="script.js"></script>

@@ -16,6 +16,12 @@
     <?php
         include('admin_css.php');
     ?>
+    <style>
+        .dashboard{
+            background: #3b82f6;
+            color: white;
+        }
+    </style>
 </head>
 <body>
     <?php

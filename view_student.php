@@ -34,6 +34,10 @@
             padding:20px;
             font-size:18px;
         }
+        .viewstudent{
+            background: #3b82f6;
+            color: white;
+        }
     </style>
 </head>
 <body>

@@ -14,7 +14,6 @@
     $conn = new mysqli($host, $user, $password, $dbname);
     $sql="select * from admission";
     $result=mysqli_query($conn,$sql);
-
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -32,7 +31,10 @@
             padding:20px;
             font-size:15px;
         }
-        
+        .admission{
+            background: #3b82f6;
+            color: white;
+        }
     </style>
 </head>
 <body>

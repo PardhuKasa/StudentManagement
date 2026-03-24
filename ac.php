@@ -17,6 +17,16 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="admin.css">
+    <style>
+        .ac{
+            background: #3b82f6;
+            color: white;
+        }
+        iframe{
+            width: 100%;
+            height:100vh;
+        }
+    </style>
 </head>
 <body>
     <header class="header">
@@ -26,7 +36,7 @@
         </div>
     </header>
     <aside class="sidebar">
-        <ul>
+       <ul>
             <li>
                 <a href="mycourses.php" class="mycourses">My Courses</a>
             </li>
@@ -49,9 +59,10 @@
         </ul>
     </aside>
     <div class="content">
-        <h1>Welcome <?php
-        echo $uname;
-        ?></h1>
+        <center>
+            <h1>Academic Calender</h1>
+            <iframe src='ac.pdf' frameborder="0"></iframe>
+        </center>
     </div>
 </body>
 </html>

@@ -2,13 +2,13 @@
 session_start();
 
 if(isset($_SESSION['username'])){
-    header("location: admin/dashboard.php");
+    header("location:admin_add_teacher.php");
 }
-else if($_SESSION['usertype'] == "student"){
-    header("location: login.php");
+else if($_SESSION['usertype']=="student"){
+    header("location:login.php");
 }
 
-$conn = new mysqli("localhost","root","","schoolproject");
+$conn = new mysqli("localhost","root","","studentmanagement");
 
 if(isset($_POST['add_teacher'])){
     $t_name = $_POST['name'];
@@ -18,7 +18,7 @@ if(isset($_POST['add_teacher'])){
     $dst = "./image/".$file;
     $dst_db = "image/".$file;
 
-    move_uploaded_file($_FILES['image']['tmp_name'], $dst);
+    move_uploaded_file($_FILES['image']['tmp_name'],$dst);
 
     $sql = "INSERT INTO teacher(name,description,image) VALUES('$t_name','$t_desc','$dst_db')";
     $result = mysqli_query($conn,$sql);
@@ -34,7 +34,7 @@ if(isset($_POST['add_teacher'])){
     <meta charset="utf-8">
     <title>Admin Dashboard</title>
 
-    <style type="text/css">
+    <style>
         .form_deg{
             background-color: skyblue;
             padding: 30px;

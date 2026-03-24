@@ -9,7 +9,7 @@
     $host="localhost";
     $user="root";
     $password="";
-    $db="schoolproject";
+    $db="studentmanagement";
 
     $data=mysqli_connect($host,$user,$password,$db);
     $sql="SELECT * FROM teacher";
@@ -25,13 +25,10 @@
         include('admin_css.php');
     ?>
     <style>
-        .table_th{
+        table,th,td{
+            border:1px solid black;
             padding:20px;
             font-size:20px;
-        }
-        .table_td{
-            padding:20px;
-            background-color:skyblue;
         }
     </style>
 </head>
@@ -41,12 +38,12 @@
     ?>
     <div class="content">
         <center> 
-            <h1>View All Teacher Data</h1>
-            <table border="1px">
+            <h1>Teacher Data</h1>
+            <table>
                 <tr>
-                    <th class="table_th">Teacher Name</th>
-                    <th class="table_th">About Teacher</th>
-                    <th class="table_th">Image</th>
+                    <th>Teacher Name</th>
+                    <th>About Teacher</th>
+                    <th>Image</th>
                 </tr>
                 <?php
                 while($info=$result->fetch_assoc())
@@ -54,15 +51,15 @@
 
                 ?>
                 <tr>
-                    <td class="table_td">
+                    <td>
                         <?php echo "{$info['name']}" 
                         ?>
                     </td>
-                    <td class="table_td">
+                    <td>
                         <?php echo "{$info['description']}" 
                         ?>
                     </td>
-                    <td class="table_td">
+                    <td>
                         <img height="100px" width="100px" src="<?php echo "{$info['image']}" ?>">
                     </td>
 
